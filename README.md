@@ -32,7 +32,19 @@ What segments show the highest engagement?
 
 
 Tools And Technologies 
+<br>
+Python(Pandas)
+<br>
+SQL(data aggregation & KPI computation)
+<br>
+Power BI Dashboard
 
+
+Project Workflow
+<br>
+Data(Spotify listening logs):
+<br>
+Data - MySQL - SQL - Pandas -Time-based Analysis - User Segmentation - visualization dashboard - business insights
 
 
 
