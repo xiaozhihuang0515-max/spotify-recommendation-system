@@ -47,6 +47,56 @@ Data(Spotify listening logs):
 Data - MySQL - SQL - Pandas -Time-based Analysis - User Segmentation - visualization dashboard - business insights
 
 
+Steps Involved
+<br>
+1. Data Cleaning
+   <br>
+   Remove duplicate lisenting events
+   <br>
+   Handle missing timestamps or track info
+   <br>
+   Standaridze datetime format
+
+2. Exploratory Data Analysis (EDA)
+   <br>
+   Top artists & tracks
+   <br>
+   Distributions of listening duration
+   <br>
+   Most active users
+
+3. Time-Based Analysis
+   <br>
+   Total listening time per user
+   <br>
+   Repeat listening behavior
+   <br>
+   Engagement frequency
+
+4. User segmentation
+   <br>
+   Heavy user vs casual user
+   <br>
+   Genre/artist preference clusters
+   <br>
+   Avtivity-based grouping
+
+
+Key Outputs
+<br>
+Top artists & track rankings
+<br>
+Time-based engagement charts
+<br>
+User segmentation results
+<br>
+Listening trend analysis
+<br>
+Business insights report
+
+   
+   
+
 
 
 
