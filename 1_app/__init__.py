@@ -1,0 +1,2 @@
+"""Spotify FastAPI demo."""
+
