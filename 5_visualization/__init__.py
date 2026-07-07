@@ -1,1 +1,2 @@
+"""Reusable visualization payload builders."""
 
