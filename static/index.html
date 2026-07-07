@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Spotify Audio Explorer</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <span class="eyebrow">FASTAPI × SPOTIFY EDA</span>
+    <h1>Hear the shape<br>of the dataset.</h1>
+    <p>Explore 6K tracks, compare genres, and find neighbors in an audio-feature embedding.</p>
+    <a href="/docs">Open API docs ↗</a>
+  </header>
+  <main>
+    <section id="metrics" class="metrics" aria-label="Dataset summary"></section>
+    <section class="panel">
+      <div class="panel-title"><div><span>01</span><h2>Genre pulse</h2></div><p>Average popularity and energy</p></div>
+      <div id="genre-chart" class="genre-chart"></div>
+    </section>
+    <section class="panel split">
+      <div>
+        <div class="panel-title"><div><span>02</span><h2>Popularity curve</h2></div></div>
+        <div id="histogram" class="histogram"></div>
+      </div>
+      <div>
+        <div class="panel-title"><div><span>03</span><h2>Similarity lab</h2></div></div>
+        <label for="search">Search a track or artist</label>
+        <div class="search-row"><input id="search" placeholder="Try: Comedy"><button id="search-button">Search</button></div>
+        <div id="results" class="results"><p class="muted">Choose a result to generate audio-feature neighbors.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>Built from the supplied Spotify sample · <a href="/api/health">Health</a></footer>
+  <script src="/static/dashboard.js" defer></script>
+</body>
+</html>
+
