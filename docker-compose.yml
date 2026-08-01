@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: spotify_ai
+      POSTGRES_USER: spotify
+      POSTGRES_PASSWORD: spotify
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U spotify -d spotify_ai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://spotify:spotify@db:5432/spotify_ai
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+volumes:
+  postgres_data:
