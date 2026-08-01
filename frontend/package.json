@@ -1,0 +1,8 @@
+{
+  "name": "spotify-ai-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "dev": "vite", "build": "tsc -b && vite build" },
+  "dependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "typescript": "latest", "react": "latest", "react-dom": "latest", "lucide-react": "latest", "recharts": "latest" },
+  "devDependencies": { "@types/node": "latest", "@types/react": "latest", "@types/react-dom": "latest" }
+}

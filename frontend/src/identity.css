@@ -1,0 +1,28 @@
+.account b {
+  font-size: 0;
+}
+
+.account b::after {
+  content: "xiaozhihuang";
+  font-size: 12px;
+}
+
+.avatar {
+  font-size: 0;
+}
+
+.avatar::after {
+  content: "XH";
+  font-size: 11px;
+  font-weight: 700;
+}
+
+main > header:not(.compact) h1 {
+  font-size: 0;
+}
+
+main > header:not(.compact) h1::after {
+  content: "Welcome back, xiaozhihuang 🎧";
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -0.04em;
+}
